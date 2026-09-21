@@ -2,7 +2,7 @@
 
 ### 1. Reintento automático ante datos incorrectos o fuera de rango
 * **Descripción:** Si el usuario ingresaba un valor inválido (como letras en campos numéricos o números fuera de las opciones permitidas), el sistema fallaba o no daba opción de corrección.
-* **Solución:** Se implementaron bucles de validación continua (`while True`) en las funciones de entrada de datos. Cuando se ingresa un valor erróneo, el programa muestra un mensaje de advertencia y solicita el dato nuevamente hasta que sea correcto[cite: 8].
+* **Solución:** Se implementaron bucles de validación continua (`while True`) en las funciones de entrada de datos. Cuando se ingresa un valor erróneo, el programa muestra un mensaje de advertencia y solicita el dato nuevamente hasta que sea correcto.
 
 ### 2. Restricción en la cantidad permitida de atenciones
 * **Descripción:** Se podían ingresar números enteros negativos, cero o cantidades excesivas en las atenciones que lo requerían.
@@ -34,7 +34,7 @@
 
 ### 3. Nombres con caracteres numéricos o símbolos
 * **Estado:** Pendiente.
-* **Descripción:** El campo "Nombre" valida la cantidad máxima de caracteres y que no esté vacío, pero acepta entradas que contienen números o caracteres especiales (ej. `"Carlos123"` o `"Juan#$"`)[cite: 8].
+* **Descripción:** El campo "Nombre" valida la cantidad máxima de caracteres y que no esté vacío, pero acepta entradas que contienen números o caracteres especiales (ej. `"Carlos123"` o `"Juan#$"`).
 * **Impacto:** Compromete la calidad e integridad de la información del cliente.
 * **Acción requerida:** Implementar validaciones mediante expresiones regulares o métodos de cadena (como `.isalpha()`) para permitir únicamente letras y espacios.
 
